@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="KF Fitness — vista sua evolução. Roupas e acessórios fitness.">
+  <title>Kauã Fernandes Fitness | Vista sua evolução</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#inicio"><img src="assets/logo-kf.jpeg" alt="Kauã Fernandes Fitness"></a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+  <nav id="mainNav">
+    <a href="#inicio">Início</a><a href="#produtos">Produtos</a><a href="#sobre">Sobre nós</a><a href="#contato">Contato</a>
+  </nav>
+  <div class="header-actions"><button class="icon-btn" id="searchToggle" aria-label="Pesquisar">⌕</button><button class="icon-btn cart-open" id="cartOpen">Sacola <span id="cartCount">0</span></button></div>
+</header>
+<main>
+<section class="hero" id="inicio">
+  <div class="hero-shade"></div><div class="hero-content">
+    <p class="eyebrow">KF FITNESS • PERFORMANCE & ESTILO</p>
+    <h1>VISTA SUA<br><em>EVOLUÇÃO.</em></h1>
+    <p>Vista sua força. Supere seus limites. Encontre peças que acompanham o seu ritmo.</p>
+    <a class="gold-btn" href="#produtos">EXPLORAR COLEÇÃO <span>↗</span></a>
+  </div><div class="hero-mark">KF<span>®</span></div>
+</section>
+<section class="benefits"><div>✦ QUALIDADE E ESTILO</div><div>✦ PARA SUA ROTINA</div><div>✦ ATENDIMENTO PELO WHATSAPP</div></section>
+<section class="section" id="produtos">
+  <div class="section-head"><div><p class="eyebrow">ESCOLHA SEU ESTILO</p><h2>Produtos em destaque</h2></div><button class="text-btn" id="allProducts">VER TODOS ↗</button></div>
+  <div class="toolbar"><input id="searchInput" type="search" placeholder="Buscar produtos..."><select id="categoryFilter"><option value="">Todas as categorias</option><option>Roupas</option><option>Acessórios</option><option>Masculino</option><option>Feminino</option></select><select id="sortFilter"><option value="featured">Destaques</option><option value="low">Menor preço</option><option value="high">Maior preço</option></select></div>
+  <div class="product-grid" id="productGrid"></div>
+  <p class="empty hidden" id="emptyState">Nenhum produto encontrado. Tente outra busca.</p>
+</section>
+<section class="manifesto" id="sobre"><div class="manifesto-image"></div><div class="manifesto-copy"><p class="eyebrow">NOSSA ESSÊNCIA</p><h2>Força para ir<br><em>além.</em></h2><p>A Kauã Fernandes Fitness nasceu para acompanhar quem transforma disciplina em conquista. Nossa proposta une atitude, conforto e estilo dentro e fora dos treinos.</p><a class="text-btn" href="#contato">FALE COM A KF ↗</a></div></section>
+<section class="section contact" id="contato"><p class="eyebrow">ESTAMOS AQUI</p><h2>Vamos conversar?</h2><p>Ficou com dúvida sobre tamanho, disponibilidade ou entrega? Fale com nossa equipe.</p><div class="contact-actions"><a class="gold-btn" target="_blank" rel="noopener" href="https://wa.me/556195706241">CHAMAR NO WHATSAPP ↗</a><a class="outline-btn" target="_blank" rel="noopener" href="https://www.instagram.com/kffitness.oficial/">INSTAGRAM ↗</a></div></section>
+</main>
+<footer><div class="footer-brand">KAUÃ FERNANDES <b>FITNESS</b></div><p>VISTA SUA EVOLUÇÃO.</p><small>© <span id="year"></span> Kauã Fernandes Fitness. Todos os direitos reservados.</small><button class="admin-link" id="adminOpen">Área administrativa</button></footer>
+
+<div class="overlay hidden" id="cartOverlay"><aside class="drawer"><div class="drawer-head"><h3>Sua sacola</h3><button class="close" data-close="cartOverlay">×</button></div><div id="cartItems"></div><div class="cart-bottom"><div class="total-line"><span>Subtotal</span><strong id="cartTotal">R$ 0,00</strong></div><button class="gold-btn full" id="checkoutBtn">FINALIZAR PELO WHATSAPP ↗</button><small>O pagamento e a entrega serão combinados no atendimento.</small></div></aside></div>
+
+<div class="overlay hidden" id="productOverlay"><div class="modal product-modal"><button class="close floating" data-close="productOverlay">×</button><div id="productDetail"></div></div></div>
+<div class="overlay hidden" id="adminOverlay"><div class="modal admin-modal"><button class="close floating" data-close="adminOverlay">×</button><div id="adminContent"></div></div></div>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body></html>

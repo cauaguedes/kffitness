@@ -1,0 +1,19 @@
+# KAUÃ FERNANDES FITNESS — loja virtual inicial
+
+## Como visualizar
+Abra `index.html` em um navegador. Para uma experiência melhor, publique a pasta inteira em uma hospedagem de sites estáticos.
+
+## O que já funciona
+- Catálogo responsivo com busca, filtros e ordenação.
+- Página individual de produto com preço, descrição e seleção de tamanho.
+- Sacola e cálculo do subtotal.
+- Finalização do pedido pelo WhatsApp +55 61 9570-6241.
+- Painel administrativo local para cadastrar/excluir produtos e carregar fotos.
+- Links para o Instagram da marca.
+
+## Importante antes de vender
+Esta é uma primeira versão de front-end. O painel salva os produtos no armazenamento do navegador em que foram cadastrados; ele ainda não sincroniza entre dispositivos nem publica produtos automaticamente para todos os visitantes. Para isso, é necessário backend/banco de dados e autenticação.
+
+O botão de finalização encaminha o pedido para o WhatsApp. Pix/cartão são combinados no atendimento; para cobrar diretamente dentro do site será necessário integrar um intermediador de pagamento (por exemplo, Mercado Pago ou PagSeguro), configurar credenciais e testar o fluxo.
+
+Os produtos exibidos inicialmente são exemplos ilustrativos. Substitua preços, descrições e fotos pelos dados reais da loja.
